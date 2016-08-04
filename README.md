@@ -1,10 +1,10 @@
 Impeedunio Programmer
 =====================
 
-This firmware will allow you to program the ATmega328 built into the Impduino. 
+This firmware will allow you to program the ATmega328 built into the Impeeduino. 
 It parses Intel HEX files delivered via HTTP POST (form) and implements the STK500v1 serial protocol to talk to the connected ATmega328.
 
-You will need to install the "[optiboot](https://code.google.com/p/optiboot/)" bootloader using an ICSP cable. At the time of writing, the latest version was [v5.0a](https://code.google.com/p/optiboot/downloads/detail?name=optiboot-v5.0a.zip).
+You will need to install the "[optiboot](https://github.com/Optiboot/optiboot)" bootloader using an ICSP cable.
 To do this you will need an ISP or use [another Ardiuno as the ISP](http://arduino.cc/en/Tutorial/ArduinoISP) and the ArduinoISP sketch.
 
 You might need to adjust the signature of the ATmega328P in the avrdude configuration to make avrdude think its an ATmega328P.
@@ -23,10 +23,15 @@ Contributors
 ============
 
 - Aron
+- Reshef
 
 Usage
 =====
 
 This is not a library class. It represents an entire application for programming the Arduino via an Imp with a HEX file.
 You can adapt it to your needs, such as combining the programming functionality with application level communication.
+
+Original link
+=============
+This repository was created from code by https://github.com/electricimp/reference/tree/master/hardware/impeeduino
 
